@@ -8,28 +8,31 @@ myImage.onclick = function() {
       myImage.setAttribute('src', 'images/headpic.jpg');
     }
 }
+
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
+
 function setUserName() {
   let myName = prompt('请输入你的名字。');
   localStorage.setItem('name', myName);
-  myHeading.textContent = 'test,' + myName;
+  myHeading.textContent = 'Hello,' + myName;
 }
+
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'test,' + storedName;
+  myHeading.textContent = 'Hello,' + storedName;
 }
-myButton.onclick = function() {
-   setUserName();
-}
-function setUserName() {
+
+myButton.onclick = function () {
   let myName = prompt('请输入你的名字。');
   if(!myName || myName === null) {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'test,' + myName;
+    myHeading.innerHTML = 'Hello,' + myName;
   }
 }
+
+  
