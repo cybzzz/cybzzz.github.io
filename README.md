@@ -1,6 +1,5 @@
-# 可乐怪兽
+## cyb
 * [first-side](/first-site/index.html)
 * [2048](/2048/index.html)
-* chatrobot
 * [randomstory](/randomstory/test.html)
 * [jumpball](/jumpball/index.html)
